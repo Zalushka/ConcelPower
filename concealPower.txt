@@ -1,0 +1,13 @@
+local a = game:GetService("Players"):GetChildren()
+
+while wait() do
+    for i = 1,#a do
+  if not game:GetService("Workspace")[a[i].Name].HumanoidRootPart then
+      game:GetService("Workspace")[a[i].Name].HumanoidRootPart.TotalPower.Enabled = false
+  else
+  if game:GetService("Workspace")[a[i].Name].HumanoidRootPart then
+          game:GetService("Workspace")[a[i].Name].HumanoidRootPart.TotalPower.Enabled = true
+end
+end
+end
+end 
